@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <title>Survey Form</title>
+   <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Restaurant Reservation Request</h1>
+    <p id="description">Please, kindly provide the necessary information below</p>
+    <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Enter your name:
+        <input id="name" type="text" placeholder="Patricia S. Ceballos" value="Patricia S. Ceballos" required></label>
+      <label id="email-label">Enter your email: 
+       <input id="email" type="email" placeholder="stroka.pati@gmail.com" value="stroka.pati@gmail.com" required></label>
+      <label id="number-label">Guests: 
+        <input id="number" type="number" min="2" max="12" placeholder="5" value="5"></label>
+      </fieldset>
+      <fieldset>
+        Where do you like to sit:
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Indoor</option>
+          <option value="2">Outdoor</option>
+          <option value="3">Either way is fine</option>
+        </fieldset>
+        </select>
+        <fieldset>
+          <p>I would like to try:</p>
+          <div class="checkbox-group">
+            <label for="drink">
+            <input class="inline" type="checkbox" value="drink"> Signature Drink
+          </label>
+          <label for="dessert">
+            <input class="inline" type="checkbox" value="dessert"> Pastry Dessert
+          </label>
+          </div>
+          <div class="checkbox-group">
+          <label for="menu">
+            <input class="inline" type="checkbox" value="menu"> Chef's Menu
+          </label>
+          <label for="coffee">
+            <input class="inline" type="checkbox" value="coffee"> Signature Coffee
+          </label>
+          </div>
+        </fieldset>
+        <fieldset>
+        <label for="yes-no"> Dou you have any food allergies/intolerances?
+          <div class="radio-group">
+        <input type="radio" value="yes" name="allergies" class="inline">Yes</label>
+        <label for="no">
+        <input type="radio" value="no" name="allergies" class="inline" checked>No</label>
+        </div>
+          <label for="about-allergies"> Tell us about your food alergies/intolerances?
+          <textarea id="about-allergies" name="about-allergies" rows="3" cols="30" placeholder="I'm allergic/intolerant to:"></textarea></label></fieldset>
+        <fieldset>
+        <label for="submit">
+          <input type="submit" id="submit">
+        </label>
+        </fieldset>
+    </form>
+  </body>
+</html>
